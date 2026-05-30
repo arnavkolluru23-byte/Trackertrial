@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Pulse | Courses</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Libre+Franklin:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body data-page="courses">
+  <header class="site-header">
+    <div class="site-shell nav-shell">
+      <a href="./index.html" class="brand">
+        <span class="brand-mark"></span>
+        <span class="brand-text">Campus Pulse</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="./index.html" class="site-link" data-page="home">Home</a>
+        <a href="./tracker.html" class="site-link" data-page="tracker">Tracker</a>
+        <a href="./courses.html" class="site-link" data-page="courses">Courses</a>
+        <a href="./calendar.html" class="site-link" data-page="calendar">Calendar</a>
+        <a href="./resources.html" class="site-link" data-page="resources">Resources</a>
+        <div class="site-menu">
+          <button class="site-link site-link-button" type="button">More</button>
+          <div class="site-dropdown">
+            <a href="./tracker.html#dailyTracker">Daily log</a>
+            <a href="./calendar.html#savedHistory">Saved history</a>
+            <a href="./courses.html#healthPath">Health path</a>
+            <a href="./resources.html#videos">Video library</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-shell">
+    <section class="page-banner">
+      <div class="page-banner-image feature-image-courses"></div>
+      <div class="page-banner-copy">
+        <p class="eyebrow">UW course path</p>
+        <h1 id="healthPath">Build a health-focused informatics minor</h1>
+      </div>
+    </section>
+
+    <section class="section-heading">
+      <p class="panel-kicker">Core path</p>
+      <h2>Suggested order for a medical major</h2>
+    </section>
+
+    <section class="story-grid course-grid">
+      <article class="story-card">
+        <div class="story-card-copy">
+          <p class="eyebrow">Step 1</p>
+          <h3>INFO 200</h3>
+          <p>Start with intellectual foundations so the field makes sense before you specialize.</p>
+        </div>
+      </article>
+      <article class="story-card">
+        <div class="story-card-copy">
+          <p class="eyebrow">Step 2</p>
+          <h3>INFO 201</h3>
+          <p>Build data science basics that support research, public health, and evidence-driven care.</p>
+        </div>
+      </article>
+      <article class="story-card">
+        <div class="story-card-copy">
+          <p class="eyebrow">Step 3</p>
+          <h3>Ethics or policy</h3>
+          <p>Take INFO 104 or a public-health ethics course to ground technology in responsibility.</p>
+        </div>
+      </article>
+    </section>
+
+    <div class="page-layout">
+      <section class="panel page-main">
+        <div class="panel-head">
+          <div>
+            <p class="panel-kicker">Health-aligned picks</p>
+            <h2>Courses to prioritize</h2>
+          </div>
+        </div>
+        <div class="resource-columns two-up">
+          <article>
+            <h3>High-fit electives</h3>
+            <ul class="resource-list">
+              <li>INFO 468 - Designing for Personal Health and Wellness</li>
+              <li>INFO 478 - Population Health Informatics</li>
+              <li>BIME 300 - Transformational Technologies for Biology, Medicine, and Health</li>
+              <li>BIME 435 - Informatics in Healthcare</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Useful support skills</h3>
+            <ul class="resource-list">
+              <li>INFO 430 - Database Design and Management</li>
+              <li>INFO 474 - Interactive Information Visualization</li>
+              <li>SPH 481 - Ethics, Social Justice and Policy in Public Health</li>
+              <li>Additional INFO electives that strengthen data, design, and systems thinking</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <aside class="panel sidebar-panel">
+        <p class="panel-kicker">Official pages</p>
+        <h2>Reference links</h2>
+        <div class="link-stack">
+          <a class="mini-link-card" href="https://ischool.uw.edu/programs/informatics/minor" target="_blank" rel="noreferrer">UW Informatics minor</a>
+          <a class="mini-link-card" href="https://www.washington.edu/students/crscat/info.html" target="_blank" rel="noreferrer">UW INFO catalog</a>
+          <a class="mini-link-card" href="https://www.bime.uw.edu/education/" target="_blank" rel="noreferrer">UW BIME education</a>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Pulse | Resources</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Libre+Franklin:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body data-page="resources">
+  <header class="site-header">
+    <div class="site-shell nav-shell">
+      <a href="./index.html" class="brand">
+        <span class="brand-mark"></span>
+        <span class="brand-text">Campus Pulse</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="./index.html" class="site-link" data-page="home">Home</a>
+        <a href="./tracker.html" class="site-link" data-page="tracker">Tracker</a>
+        <a href="./courses.html" class="site-link" data-page="courses">Courses</a>
+        <a href="./calendar.html" class="site-link" data-page="calendar">Calendar</a>
+        <a href="./resources.html" class="site-link" data-page="resources">Resources</a>
+        <div class="site-menu">
+          <button class="site-link site-link-button" type="button">More</button>
+          <div class="site-dropdown">
+            <a href="./tracker.html#dailyTracker">Daily log</a>
+            <a href="./calendar.html#savedHistory">Saved history</a>
+            <a href="./courses.html#healthPath">Health path</a>
+            <a href="./resources.html#videos">Video library</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-shell">
+    <section class="page-banner">
+      <div class="page-banner-image feature-image-resources"></div>
+      <div class="page-banner-copy">
+        <p class="eyebrow">Study support</p>
+        <h1 id="videos">Books, links, and video learning</h1>
+      </div>
+    </section>
+
+    <section class="resource-columns resource-page-grid">
+      <article class="panel">
+        <p class="panel-kicker">Official UW</p>
+        <h2>Program links</h2>
+        <ul class="resource-list">
+          <li><a href="https://ischool.uw.edu/programs/informatics/minor" target="_blank" rel="noreferrer">UW Informatics Minor requirements</a></li>
+          <li><a href="https://ischool.uw.edu/programs/informatics/focus-areas" target="_blank" rel="noreferrer">UW Informatics focus areas</a></li>
+          <li><a href="https://ischool.uw.edu/programs/informatics/curriculum/registration" target="_blank" rel="noreferrer">UW INFO registration guidance</a></li>
+          <li><a href="https://www.washington.edu/students/crscat/info.html" target="_blank" rel="noreferrer">UW INFO course catalog</a></li>
+          <li><a href="https://www.bime.uw.edu/education/" target="_blank" rel="noreferrer">UW Biomedical Informatics education</a></li>
+        </ul>
+      </article>
+
+      <article class="panel">
+        <p class="panel-kicker">Textbooks</p>
+        <h2>Reading list</h2>
+        <ul class="resource-list">
+          <li><a href="https://r4ds.had.co.nz/" target="_blank" rel="noreferrer">R for Data Science</a></li>
+          <li><a href="https://wesmckinney.com/book/" target="_blank" rel="noreferrer">Python for Data Analysis</a></li>
+          <li><a href="https://www.oreilly.com/library/view/database-design-for/9781118884439/" target="_blank" rel="noreferrer">Database Design for Mere Mortals</a></li>
+          <li><a href="https://clauswilke.com/dataviz/" target="_blank" rel="noreferrer">Fundamentals of Data Visualization</a></li>
+          <li><a href="https://www.ncbi.nlm.nih.gov/books/NBK470275/" target="_blank" rel="noreferrer">Clinical Informatics overview</a></li>
+        </ul>
+      </article>
+
+      <article class="panel">
+        <p class="panel-kicker">YouTube</p>
+        <h2>Video learning</h2>
+        <ul class="resource-list">
+          <li><a href="https://www.youtube.com/c/freecodecamp" target="_blank" rel="noreferrer">freeCodeCamp</a></li>
+          <li><a href="https://www.youtube.com/@AlexTheAnalyst" target="_blank" rel="noreferrer">Alex The Analyst</a></li>
+          <li><a href="https://www.youtube.com/@statquest" target="_blank" rel="noreferrer">StatQuest</a></li>
+          <li><a href="https://www.youtube.com/@stanfordonline" target="_blank" rel="noreferrer">Stanford Online</a></li>
+          <li><a href="https://www.youtube.com/results?search_query=population+health+informatics" target="_blank" rel="noreferrer">Population health informatics search</a></li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Pulse | Calendar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Libre+Franklin:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body data-page="calendar">
+  <header class="site-header">
+    <div class="site-shell nav-shell">
+      <a href="./index.html" class="brand">
+        <span class="brand-mark"></span>
+        <span class="brand-text">Campus Pulse</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="./index.html" class="site-link" data-page="home">Home</a>
+        <a href="./tracker.html" class="site-link" data-page="tracker">Tracker</a>
+        <a href="./courses.html" class="site-link" data-page="courses">Courses</a>
+        <a href="./calendar.html" class="site-link" data-page="calendar">Calendar</a>
+        <a href="./resources.html" class="site-link" data-page="resources">Resources</a>
+        <div class="site-menu">
+          <button class="site-link site-link-button" type="button">More</button>
+          <div class="site-dropdown">
+            <a href="./tracker.html#dailyTracker">Daily log</a>
+            <a href="./calendar.html#savedHistory">Saved history</a>
+            <a href="./courses.html#healthPath">Health path</a>
+            <a href="./resources.html#videos">Video library</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-shell">
+    <section class="page-banner">
+      <div class="page-banner-image feature-image-calendar"></div>
+      <div class="page-banner-copy">
+        <p class="eyebrow">Saved history</p>
+        <h1 id="savedHistory">Calendar archive</h1>
+      </div>
+    </section>
+
+    <div class="page-layout">
+      <section class="panel calendar-panel page-main">
+        <div class="panel-head compact">
+          <div>
+            <p class="panel-kicker">Monthly view</p>
+            <h2>Saved records</h2>
+          </div>
+          <div class="calendar-nav">
+            <button type="button" class="nav-btn" id="prevMonthBtn" aria-label="Previous month">&larr;</button>
+            <span id="calendarTitle"></span>
+            <button type="button" class="nav-btn" id="nextMonthBtn" aria-label="Next month">&rarr;</button>
+          </div>
+        </div>
+        <div class="calendar-grid" id="calendarGrid"></div>
+        <div class="calendar-legend">
+          <span><i class="legend-dot saved"></i> Saved day</span>
+          <span><i class="legend-dot today"></i> Today</span>
+        </div>
+      </section>
+
+      <aside class="panel sidebar-panel">
+        <p class="panel-kicker">Record preview</p>
+        <h2>Selected day</h2>
+        <div class="record-preview" id="recordPreview">
+          <h3>Pick a saved day</h3>
+          <p>Your saved details will appear here.</p>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
